@@ -1,0 +1,40 @@
+# Specify Global Variables
+simClockPeriod : &SIM_CLK_PERIOD "CLOCK_PERIOD=20.00"
+simOptions: &SIM_OPTIONS
+  - "-notice"
+  - "-line"
+  - "+lint=all,noVCDE"
+  - "+v2k"
+  - "-debug"
+  - "+vcs+lic+wait"
+  - "+vcs+initreg+random"
+  - "+udpsched"
+  - "+neg_tchk"
+  - "+sdfverbose"
+  - "-negdelay"
+  - "+evalorder"
+#  - "+define+no_cache_mem"
+  - "+define+DEBUG"
+  - "+incdir+../../src"
+  - "-sverilog"
+
+simVerilogSrc: &SIM_VERILOG_SRC
+  - "src/ExtMemModel.v"
+  - "src/riscv_test_harness.v"
+
+tb_name: &TB_NAME "rocketTestHarness"
+
+# Post-Synthesis Gate-Level Simulation Variables
+sim.inputs:
+  input_files: *SIM_VERILOG_SRC
+  input_files_meta: append
+  timing_annotated: true
+  level: "syn"
+  timescale:   "1ns/1ps"
+  options:     *SIM_OPTIONS
+  top_module:  *TB_NAME
+  tb_name:     *TB_NAME
+  defines: 
+    - *SIM_CLK_PERIOD
+  execute_sim: false
+
