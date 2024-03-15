@@ -86,7 +86,7 @@ The checkoffs must be completed in order.**
 For example, you cannot get checked off for checkpoint 3 until you get checked
 off for checkpoint 2.
 
-To start, create a team on [GitHub classroom](https://classroom.github.com/a/v4DM_v4Z), and add your teammates.
+To start, create a team on [GitHub classroom](https://classroom.github.com/a/1oMp9Od4), and add your teammates.
 Then clone your GitHub classroom repository.
   ```shell
   cd /home/tmp/<your-eecs-username>
