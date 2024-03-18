@@ -165,8 +165,7 @@ To clean the simulation directory from previous simulations’ files, type ``mak
 ---
 
 ###  8. Checkpoint #1: Pipeline & ALU
-*Checkoff due: 2:00PM, March 19th (Tuesday), 2024*
-
+*Checkoff due: *Checkoff due: 6PM  3/21/24 (Kevin A's OH)*
 
 Please answer the following questions to be checked off by a TA:
 1. Show your pipeline diagram, and explain when writes and reads occur in the register file and memory relative to the pipeline stages.
