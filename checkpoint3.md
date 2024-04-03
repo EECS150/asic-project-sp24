@@ -1,4 +1,4 @@
-# EECS 151/251A ASIC Project Specification: Checkpoint 2
+# EECS 151/251A ASIC Project Specification: Checkpoint 3
 <p align="center">
 Prof. John Wawrzynek
 </p>
@@ -14,7 +14,7 @@ College of Engineering, University of California, Berkeley
 
 ---
 
-## Checkpoint 3: Cache
+## Cache
 
 A processor operates on data in memory. Memory can hold billions of bits,
 which can either be instructions or data. In a VLSI design,
