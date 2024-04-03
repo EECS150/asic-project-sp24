@@ -120,12 +120,14 @@ module ASYNC_2R1WRAM_JWSTYLE
       REGISTER #(.N(WIDTH)) reg_x (.clk(clk), .d(reg_d[i]), .q(reg_q[i]));
 
       // Write
-      always @(posedge clk) begin 
+      always @(*) begin 
         if (rst == 1'b1) begin
-          reg_d[i] <= {WIDTH{1'b0}};
+          reg_d[i] = {WIDTH{1'b0}};
         end else begin
           if ((we == 1'b1) && (i == waddr0)) begin
-            reg_d[waddr0] <= wdata;
+            reg_d[waddr0] = wdata;
+          end else begin
+            reg_d[i] = reg_q[i];
           end
         end
       end
