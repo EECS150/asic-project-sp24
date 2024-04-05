@@ -113,7 +113,7 @@ After completing your cache, run the tests with both the cache included and with
 simOptions variable in the `sim-rtl.yml` file. To use your cache, comment out `+define+no_cache_mem`.
 Take note of the cycle counts for both. You should see the cycle counts increase when you use the cache.
 
-### 7. Checkpoint 2 Deliverables
+### 7. Checkpoint 3 Deliverables
 *Checkoff due: 6PM  4/25/24 (Kevin A's OH)*
 
 Please answer the following questions to be checked off by a TA.
