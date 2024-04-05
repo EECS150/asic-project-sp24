@@ -53,7 +53,8 @@ have you done to try and optimize for these tests?
 <!-- 7. What is the post-place-and-route runtime (in seconds) of each benchmark? 
    *Use the number of cycles from RTL simulation, and minimum clock period to meet timing for place-and-route (design doesn't have to pass post-PAR simulations with this clock period).* -->
 
-7. (Optional) What is the Performance-Area score on the `sum` benchmark:
+7. (Optional) What is the Performance-Area score on the `sum` benchmark:\
+
 $$
 Score = \frac{{ClockPeriod * Cycles }}{{Area^{\frac{1}{2}}}}
 $$
