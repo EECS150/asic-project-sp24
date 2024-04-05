@@ -29,7 +29,17 @@ graded you must submit the following items:
 * `build/par-rundir/timingReports/*`
 * `build/par-rundir/innovus.log*`
 
-These files will be used to check processor functionality and will show us your critical path, maximum operating frequency and area. During the final checkoff, the
+These files will be used to check processor functionality and will show us your critical path, maximum operating frequency and area. 
+
+Also, submit your code to your team Github repo.
+  ```shell
+  git pull skeleton main
+  git add [modified files]
+  git commit
+  git push origin main
+  ```
+
+During the final checkoff, the
 professors and the GSI will be interviewing each team to gauge understanding of various concepts
 learned in the project, understand more about each team’s design process, and provide feedback. Your
 final report needs to answer the following questions:
@@ -53,7 +63,7 @@ have you done to try and optimize for these tests?
 <!-- 7. What is the post-place-and-route runtime (in seconds) of each benchmark? 
    *Use the number of cycles from RTL simulation, and minimum clock period to meet timing for place-and-route (design doesn't have to pass post-PAR simulations with this clock period).* -->
 
-7. (Optional) What is the Performance-Area score on the `sum` benchmark:
+7. (Optional) What is the CPU Performance-Area score on the `sum` benchmark:
 
 $$
 Score = \frac{{ClockPeriod * Cycles }}{{Area^{\frac{1}{2}}}}
