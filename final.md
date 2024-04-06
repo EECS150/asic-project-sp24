@@ -66,7 +66,7 @@ have you done to try and optimize for these tests?
 7. (Optional) What is the CPU Performance-Area score on the `sum` benchmark:
 
 $$
-Score = \frac{{ClockPeriod * Cycles }}{{Area^{\frac{1}{2}}}}
+Score =  {ClockPeriod * Cycles }*{Area^{\frac{1}{2}}}
 $$
    
 8. If there are bugs in your design still, explain what is working and what isn't.  What was your debugging process?  Where are the bugs localized?
