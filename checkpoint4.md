@@ -109,10 +109,16 @@ Please answer the following questions to be checked off by a TA.
 Everything in this section is optional, though there will be extra credit given for exceptional teams. Performance will be rated on the `sum.c` benchmark based off of cycle count, post-PAR clock period, and area of the `cpu` (not including `mem`) as reported by the `report_area` command on Innovus using this equation:
 
 $$
-Score = \frac{{ClockPeriod * Cycles }}{{Area^{\frac{1}{2}}}}
+Score = {ClockPeriod * Cycles }*{Area^{\frac{1}{2}}}
 $$
 
-Note that area is weighted less than performance.
+For example, a design that has a clock period of 20ns that takes 50,000,000 cycles to complete sum and has a cpu area of 50,000um^2 will have a score of 
+
+$$
+Score = {{20 \times 10^{-9} * 50\times10^6 }} * {{({50000 \times 10^{-6}})^{\frac{1}{2}}}} = 0.224
+$$
+
+Note that area is weighted less than performance. Lower scores are better.
 #### Optimizing for frequency
 
 Part of optimizing execution time is minimizing your critical path and
