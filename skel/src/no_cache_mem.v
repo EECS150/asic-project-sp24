@@ -47,8 +47,10 @@ module no_cache_mem #(
   assign write_data = (ram[ram_addr] & ~({{`MEM_DATA_BITS-CPU_WIDTH{1'b0}},wmask} << CPU_WIDTH*lower_addr)) | ((cpu_req_data & wmask) << CPU_WIDTH*lower_addr);
 
   always @(posedge clk) begin
-    if (reset) 
+    if (reset) begin
       cpu_resp_valid <= 1'b0;
+      cpu_resp_data <= {CPU_WIDTH{1'b0}};
+    end
     else if (cpu_req_valid && cpu_req_ready) begin
       if (cpu_req_write) begin
         cpu_resp_valid <= 1'b0;
