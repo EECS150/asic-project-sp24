@@ -103,7 +103,7 @@ If you need a refresher on how to partition T/I/O bits, refer to [CS 61C](https:
 You should now be able to pass the `bmark` test. The test suite includes many C programs that do
 various things to test your processor and cache implementation. You can observe the number of cycles
 that each bmark test takes to run by opening `bmark_output/*.out` and taking note of the number
-on the last line. The `make sim-rtl test bmark=all` target will also print this number for you.
+on the last line. The `make sim-rtl test_bmark=all` target will also print this number for you.
 To run a specific benchmark (e.g., cachetest), run
 ```
 make sim-rtl test_bmark=cachetest.out
