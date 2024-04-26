@@ -76,13 +76,15 @@ Things to consider:
 - Is there enough space between the SRAMS to place the digital logic?
 - How far away are the SRAMs from the digital logic they interact with?
 
-### (Optional) Post-PAR simulation
+### (Optional) Post-Syn and Post-PAR simulation
 
-To verify that your design works after PAR, use the following commands:
+You can optionally verify your design works after synthesis and PAR, use the following commands:
 
 ```
+make sim-gl-syn test_asm=all
 make sim-gl-par test_asm=all
 ```
+Only RTL simulation will be required for full credit on the project.
 
 Since there are a couple timing issues that still need to be ironed out in the SKY130 PDK, it is acceptable for your design to pass RTL simulation but fail post-PAR simulation. Feel free to try to get post-PAR simulation to work, potentially by fixing your logic or increasing the post-PAR simulation clock period.
 
