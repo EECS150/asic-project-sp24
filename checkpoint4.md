@@ -114,10 +114,10 @@ $$
 Score = {ClockPeriod * Cycles }*{Area^{\frac{1}{2}}}
 $$
 
-Use um^2 for Area (the unit for score will be $s\cdot{um}^2$). For example, a design that has a clock period of 20ns that takes 50,000,000 cycles to complete sum and has a cpu area of 50,000um^2 will have a score of 
+Use um^2 for Area (the unit for score will be $s\cdot{um}$). For example, a design that has a clock period of 20ns that takes 50,000,000 cycles to complete sum and has a cpu area of 50,000um^2 will have a score of 
 
 $$
-Score = {{20 \times 10^{-9} * 50\times10^6 }} * {{({50000})^{\frac{1}{2}}}} = 224 s\cdot{um}^2
+Score = {{20 \times 10^{-9} * 50\times10^6 }} * {{({50000})^{\frac{1}{2}}}} = {224} {s\cdot{um}}
 $$
 
 Note that area is weighted less than performance. Lower scores are better.
