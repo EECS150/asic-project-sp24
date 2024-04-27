@@ -101,8 +101,9 @@ Please answer the following questions to be checked off by a TA.
 1. Show your layout in Innovus, and explain your design considerations when creating the floorplan.
 2. Show your recorded cycle counts and explain how you arrived at your highest post-PAR clock frequency.
 3. Show your post-PAR timing reports that demonstrate that setup time constraints are met.
-2. Show your final pipeline diagram, updated to match the code.
-3. (Optional) Show that all of the assembly tests and final pass using the cache in a post-par simulation.
+4. Show your final pipeline diagram, updated to match the code.
+5. Explain any optimizations made and their effect. What can be improved?
+6. If something is not working, explain your design and what you think the bug is. Explain your debugging progress.
 
 ---
 
